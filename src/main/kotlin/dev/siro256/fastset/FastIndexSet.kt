@@ -38,7 +38,7 @@ class FastIndexSet<E> : MutableSet<E> {
     }
 
     override fun iterator(): MutableIterator<E> {
-        return map.keys.iterator()
+        return list.iterator()
     }
 
     override fun retainAll(elements: Collection<E>): Boolean {
